@@ -22,7 +22,7 @@ model1.towards = LineDirection.down
 model1.title = "这是向下的引导效果"
 models.append(model1)
 
-let maskView = ZYTutorialView(models: models!)
+let maskView = ZYTutorialView(models: models)
 view.addSubview(maskView)
 ```
 
