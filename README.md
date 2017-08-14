@@ -17,7 +17,7 @@ models.append(model)
 
 let model1 = TutorialModel()
 model1.centerPoint = CGPoint(x: screenW/2, y: 40)
-model1.radius = 26
+model1.size = CGSize(width: 100, height: 30)
 model1.towards = LineDirection.down
 model1.title = "这是向下的引导效果"
 models.append(model1)
@@ -30,13 +30,10 @@ view.addSubview(maskView)
 # Shape
 There are two shape to highlight your item for your tutorial walkthrough: cycle & Rect
 
-when you're using TutorialView or TutorialRectView, you should initial with a model which type is TutorialModel.
-
- * TutorialView need radius, centerPoint, title, towards(LineDirection Type), its size depends on radius.
-
- * TutorialRectView need size, centerPoint, title, towards(LineDirection Type), you can change the size of TutorialRectView by passing different size.
+ZYTutorialView initialize with an array of TutorialModel. 
+ * The shape is Rect when model.size has value. Do not pass a value to radius when you want to show Rect shape.
  
- 
+ * The shape is Circle when model.radius has value. Do not pass a value to size when you want to show Circle shape.
 
 # TutorialModel
 ```
