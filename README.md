@@ -6,7 +6,24 @@ A view that can show some new features in your app to others. It's flexible than
 
 # Usage
 ```
+let models = [TutorialModel]()
 
+let model = TutorialModel()
+model.centerPoint = CGPoint(x: screenW/2, y: screenH - 60)
+model.radius = 30.0
+model.towards = LineDirection.up
+model.title = "这是向上的引导效果"
+models.append(model)
+
+let model1 = TutorialModel()
+model1.centerPoint = CGPoint(x: screenW/2, y: 40)
+model1.radius = 26
+model1.towards = LineDirection.down
+model1.title = "这是向下的引导效果"
+models.append(model1)
+
+let maskView = ZYTutorialView(models: models!)
+view.addSubview(maskView)
 ```
 
 
