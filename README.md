@@ -1,7 +1,7 @@
 # ZYTutorialView
 A view that can show some new features in your app to others. It's flexible than [TutorialView](https://github.com/zhiyuanFan/TutorialView).
 
-# ScreenShot
+# Preview
 ![image](https://github.com/zhiyuanFan/ZYTutorialView/raw/master/screenshot.gif)
 
 # Usage
